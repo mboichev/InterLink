@@ -1,14 +1,16 @@
 package settingsdog;
 
-
 public class Dog {
+
+    //Скрытые свойства объекта
     private String name;
     private String breed;
     private int age;
-    
-    public void Say(){
+
+    public void Say() {
         System.out.println("Gav");
     }
+    //С помощь методов установки и получения можно использовать свойства объекта
 
     public String getName() {
         return name;
@@ -33,9 +35,9 @@ public class Dog {
     public void setAge(int age) {
         this.age = age;
     }
-    
+
     @Override
-    public String toString(){
-        return "Dog[Name: " +name+ ", Breed: " +breed+ ", Age: "+age+ "]";
+    public String toString() {
+        return "Dog[Name: " + name + ", Breed: " + breed + ", Age: " + age + "]";
     }
 }
